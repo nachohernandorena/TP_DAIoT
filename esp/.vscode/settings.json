@@ -1,0 +1,8 @@
+{
+    "idf.port": "/dev/ttyUSB0",
+    "idf.adapterTargetName": "esp32",
+    "idf.openOcdConfigs": [
+        "board/esp32-bridge.cfg"
+    ],
+    "cmake.sourceDirectory": "/home/nash/Documents/TP_DAIoT/esp/src/main"
+}
