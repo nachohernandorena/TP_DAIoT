@@ -20,20 +20,11 @@
 #include <string.h>
 #include <time.h>
 #include "ttn.h"
+#include "keys.h"
 
 // NOTE:
 // The LoRaWAN frequency and the radio chip must be configured by running 'idf.py menuconfig'.
 // Go to Components / The Things Network, select the appropriate values and save.
-
-// Copy the below hex strings from the TTN console (Applications > Your application > End devices
-// > Your device > Activation information)
-
-// AppEUI (sometimes called JoinEUI)
-const char *appEui = "0000000000000000";
-// DevEUI
-const char *devEui = "70B3D57ED0061739";
-// AppKey
-const char *appKey = "6FF2908698317411915F478F800D538B";
 
 float latitude; 
 float longitude; 

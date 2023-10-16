@@ -1,7 +1,7 @@
 {
     "version":            "1",
     "project_name":       "deep_sleep",
-    "project_version":    "5ea7d70-dirty",
+    "project_version":    "e4b49aa-dirty",
     "project_path":       "/home/nash/Documents/TP_DAIoT/esp/src",
     "idf_path":           "/home/nash/esp/esp-idf",
     "build_dir":          "/home/nash/Documents/TP_DAIoT/esp/src/build",
