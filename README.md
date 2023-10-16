@@ -1,44 +1,63 @@
-# ttn-esp32
+# TP DAIoT 📡
 
-**The Things Network device library for ESP-IDF (ESP32) supporting devices with Semtech SX127x chips**
+[![Licencia MIT](https://img.shields.io/badge/Licencia-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-This ESP32 component provides LoRaWAN communication with
-[The Things Network](https://www.thethingsnetwork.org/). It supports:
+El presente proyecto envía mensajes a través de LoRaWAN a The Things Network (TTN) utilizando el microcontrolador ESP32 y el módulo de radio SX127x. 
 
-- OTAA (over-the-air activation)
-- uplink and downlink messages
-- saving the EUIs and key in non-volatile memory
-- deep sleep and power off without the need for rejoining
-- [AT commands](https://github.com/manuelbl/ttn-esp32/wiki/AT-Commands) for provisioning EUIs and key
-(so the same code can be flashed to several devices)
-- support for regions Europe, North and South America, Australia, Korea, Asia and India
-- C and C++ API
+## Requisitos previos
 
-The library is based on the LMIC library from IBM (specifically the well-maintained version by MCCI
-– see their [GitHub repository](https://github.com/mcci-catena/arduino-lmic)) and provides a high-level API specifically targeted at The Things Network.
+Antes de usar este código, asegúrate de configurar la frecuencia LoRaWAN y los ajustes del chip de radio utilizando `idf.py menuconfig`. En el menú, navega a `Components` -> `The Things Network` para configurar los valores apropiados.
 
-## New in version 4.x
+También necesitas obtener la siguiente información de activación de la consola de TTN para tu dispositivo específico:
+- AppEUI (a veces llamado JoinEUI)
+- DevEUI
+- AppKey
 
-- Support for deep sleep and power off (see [Deep Sleep and Power Off](https://github.com/manuelbl/ttn-esp32/wiki/Deep-Sleep-and-Power-Off))
-- Verified compatibility with ESP-IDF v4.3 and 5.0
-- Upgraded underlying library mcci-catena/arduino-lmic to v4.2.0-1
-- C API
-- Support for sub-bands
-- Dropped support for *Makefile* builds
+## Uso
 
+1. Asegúrate de configurar el proyecto para tu ESP32 y de establecer la configuración de LoRaWAN como se describe en "Requisitos previos".
 
-## Get Started
+2. El código genera coordenadas aleatorias dentro de los límites de Buenos Aires y las envía a TTN. Puedes ajustar los límites o modificar los datos según las necesidades de tu aplicación.
 
-Follow the detailed [Get Started Guide](https://github.com/manuelbl/ttn-esp32/wiki/Get-Started) in the Wiki.
+3. Compila y carga el código en tu ESP32.
 
-## Supported Boards
+4. Monitoriza la salida del programa para ver el resultado de la comunicación LoRaWAN.
 
-All boards with Semtech SX127x chips, RFM9x and compatibles are supported. It includes boards from ttgo, Heltec and HopeRF. For several of them, the [Pin Configuration](https://github.com/manuelbl/ttn-esp32/wiki/Boards-and-Pins) is described in detail.
+5. El ESP32 entrará en modo de hibernación y se despertará a intervalos regulares especificados por `TX_INTERVAL` para enviar nuevos mensajes.
 
-## API Documentation
+## Licencia
 
-See [API Documentation](https://codecrete.net/ttn-esp32/) for both the C ad C++ API
+Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
 
-## More information
+## Modificado y adaptado por
 
-More information can be found on the [Wiki pages](https://github.com/manuelbl/ttn-esp32/wiki).
+- [Ignacio Hernandorena](https://github.com/nachohernandorena/)
+
+## Basado en ttn-esp32
+
+TTN-ESP32 se basa en la biblioteca [ttn-esp32](https://github.com/manuelbl/ttn-esp32), que proporciona comunicación LoRaWAN con The Things Network. La biblioteca original incluye características como OTAA, mensajes de enlace ascendente y descendente, ahorro de EUI y clave en memoria no volátil, entre otras.
+
+## Características Principales (Versión 4.x)
+
+- Soporte para modo de hibernación y apagado (ver [Hibernación y Apagado](https://github.com/manuelbl/ttn-esp32/wiki/Deep-Sleep-and-Power-Off) en la Wiki).
+- Compatibilidad verificada con ESP-IDF v4.3 y 5.0.
+- Actualización de la biblioteca subyacente mcci-catena/arduino-lmic a v4.2.0-1.
+- API en C.
+- Soporte para subbandas.
+- Se eliminó el soporte para compilación con *Makefile*.
+
+## Comenzar
+
+Sigue la guía detallada [Getting Started](https://github.com/manuelbl/ttn-esp32/wiki/Get-Started) en la Wiki para comenzar.
+
+## Placas Soportadas
+
+Se admiten todas las placas con chips Semtech SX127x, RFM9x y compatibles. Esto incluye placas de ttgo, Heltec y HopeRF. Para muchas de ellas, la [Configuración de Pines](https://github.com/manuelbl/ttn-esp32/wiki/Boards-and-Pins) se describe en detalle.
+
+## Documentación de la API
+
+Consulta la [Documentación de la API](https://codecrete.net/ttn-esp32/) para obtener información sobre la API en C y C++.
+
+## Más información
+
+Puedes encontrar más información en las [páginas de la Wiki](https://github.com/manuelbl/ttn-esp32/wiki).
