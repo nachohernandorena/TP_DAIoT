@@ -138,7 +138,7 @@ Mas info de los puntos 6, 7 y 8 en [All Things Docs](https://docs.allthingstalk.
 
 ![storage](/images/storage.png)
 
-Puedes utilizar los endpoints a continuación para recuperar datos del almacenamiento. Para obtener una descripción detallada de la API, 
+Puedes utilizar endpoints como los que dejo a continuación para recuperar datos del almacenamiento:
 
 ```js
 
