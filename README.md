@@ -132,7 +132,7 @@ Mas info de los puntos 6, 7 y 8 en [All Things Docs](https://docs.allthingstalk.
 
 12. Puedes ver las `Alertas` en tu celular si utilizas la app de [All Thing Talk](https://www.allthingstalk.com/) y configuras el/los dispositivo/s a visualizar. 
 
-![notifications](/images/notifications.png)
+![notifications](/images/notifications.jpg)
 
 11. En [The Things Network](https://www.thethingsnetwork.org/) puedes utilizar los endpoints a continuación para recuperar datos del almacenamiento. Para obtener una descripción detallada de la API, 
 
