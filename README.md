@@ -18,6 +18,9 @@ Luego, mediante la vinculación con la plataforma [All Thing Talk](https://www.a
 
 Antes de utilizar este código, asegúrate de configurar la frecuencia LoRaWAN y los ajustes del chip de radio utilizando `idf.py menuconfig`. En el menú, navega a `Components` -> `The Things Network` para configurar los valores apropiados.
 
+![sdk](/images/sdk.png)
+
+
 Además, necesitas obtener la siguiente información de activación de la consola de TTN para tu dispositivo específico:
 - AppEUI (a veces llamado JoinEUI)
 - DevEUI
