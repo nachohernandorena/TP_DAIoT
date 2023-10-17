@@ -134,7 +134,11 @@ Mas info de los puntos 6, 7 y 8 en [All Things Docs](https://docs.allthingstalk.
 
 ![notifications](/images/notifications.jpg)
 
-11. En [The Things Network](https://www.thethingsnetwork.org/) puedes utilizar los endpoints a continuación para recuperar datos del almacenamiento. Para obtener una descripción detallada de la API, 
+11. En [The Things Network](https://www.thethingsnetwork.org/) cuentas con `Storage` de la informacion generada 
+
+![storage](/images/storage.jpg)
+
+Puedes utilizar los endpoints a continuación para recuperar datos del almacenamiento. Para obtener una descripción detallada de la API, 
 
 ```js
 
