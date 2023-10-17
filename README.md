@@ -145,7 +145,7 @@ GET https://nam1.cloud.thethings.network/api/v3/as/applications/muquitta01/devic
 
 El período de retención de datos es de 24 horas. Se puede cambiar de plan para tener otros servicios, mayor tiempo de retencio y SLA.
 
-Consulta [Storage Integration API](https://www.thethingsindustries.com/docs/reference/api/)storage_integration/
+Consulta [Storage Integration API](https://www.thethingsindustries.com/docs/reference/api/storage_integration/) para mas info.
 
 ## Modificado y adaptado por
 
