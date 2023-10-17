@@ -6,7 +6,7 @@ Este proyecto tiene como objetivo la implementación de un prototipo de tag o ca
 
 El proyecto final se enfoca en desarrollar un sistema de seguimiento y control para el ganado mediante el uso de tecnología LoRaWAN y GPS. El objetivo principal es implementar etiquetas electrónicas (tags) que se colocarán en los animales y que permitirán realizar un seguimiento preciso de su ubicación. Además, se establecerán áreas permitidas para la circulación del ganado, lo que garantizará su seguridad y control.
 
-Para el desarrollo de este proyecto de Dispositivos y Aplicaciones de Internet de las Cosas (DAIoT), se utilizará el microcontrolador [ESP32 LoRa Heltec v2](https://resource.heltec.cn/download/Manual%20Old/WiFi%20Lora32Manual.pdf), las coordenadas, en esta versión, se generan aleatoriamente mendiante el codigo. Estos dispositivos estarán conectados a un [Gateway RAK7243 WisGate Developer D3](https://docs.rakwireless.com/Product-Categories/WisGate/RAK7243C/Datasheet/#hardware). Este Gateway se registrará en [The Things Network](https://www.thethingsnetwork.org/), lo que permitirá la comunicación a través de la red LoRaWAN.
+Para el desarrollo de este proyecto de Desarrollo de Aplicaciones de Internet de las Cosas (DAIoT), se utilizará el microcontrolador [ESP32 LoRa Heltec v2](https://resource.heltec.cn/download/Manual%20Old/WiFi%20Lora32Manual.pdf). Las coordenadas en esta versión se generan aleatoriamente mediante el código. Estos dispositivos estarán conectados a un [Gateway RAK7243 WisGate Developer D3](https://docs.rakwireless.com/Product-Categories/WisGate/RAK7243C/Datasheet/#hardware). Este Gateway se registrará en [The Things Network](https://www.thethingsnetwork.org/), lo que permitirá la comunicación a través de la red LoRaWAN.
 
 Luego, mediante la vinculación con la plataforma [All Thing Talk](https://www.allthingstalk.com/), se mostrará la ubicación de los animales en un mapa, y el usuario final podrá configurar las áreas permitidas para la circulación del ganado. El sistema generará alertas en caso de que un animal se desplace fuera de las zonas establecidas.
 
@@ -25,7 +25,7 @@ Los puntos principales de la configuración son:
 - Configuración del concentrador LoRa apuntando al servidor TTS.
 - Plan de frecuencia, para este caso AU915.
 
-3. Deberas configurar los pines dependiendo del dispositivo que tengas.
+3. Deberás configurar los pines dependiendo del dispositivo que tengas.
 
 ```cpp
 // Pins and other resources
@@ -89,7 +89,7 @@ const char *appKey = "????????????????????????????????";
 
 ![att_newdevices](/images/att_newdevices.png)
 
-8. En Settings -> `Payload Formats` deberás parsear el contenido del [payload recibido](https://docs.allthingstalk.com/developers/data/custom-payload-conversion/). Para el caso se usa la opción de ABCL y se arma el siguiente código: 
+8. En Settings -> `Payload Formats`, deberás parsear el contenido del [payload recibido](https://docs.allthingstalk.com/developers/data/custom-payload-conversion/). Para el caso, se usa la opción de ABCL y se arma el siguiente código:
 
 ```json
 {
@@ -134,7 +134,7 @@ Mas info de los puntos 6, 7 y 8 en [All Things Docs](https://docs.allthingstalk.
 
 ![notifications](/images/notifications.jpg)
 
-11. En [The Things Network](https://www.thethingsnetwork.org/) cuentas con `Storage` de la informacion generada 
+11. En [The Things Network](https://www.thethingsnetwork.org/), cuentas con `Storage` de la información generada.
 
 ![storage](/images/storage.png)
 
@@ -147,7 +147,7 @@ GET https://nam1.cloud.thethings.network/api/v3/as/applications/muquitta01/devic
 
 ```
 
-El período de retención de datos es de 24 horas. Se puede cambiar de plan para tener otros servicios, mayor tiempo de retencio y SLA.
+El período de retención de datos es de 24 horas. Se puede cambiar de plan para tener otros servicios, mayor tiempo de retención y SLA.
 
 Consulta [Storage Integration API](https://www.thethingsindustries.com/docs/reference/api/storage_integration/) para mas info.
 
