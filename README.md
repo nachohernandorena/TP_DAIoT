@@ -151,10 +151,6 @@ Consulta [Storage Integration API](https://www.thethingsindustries.com/docs/refe
 
 - [Ignacio Hernandorena](https://github.com/nachohernandorena/)
 
-## Comenzar
-
-Sigue la guía detallada [Getting Started](https://github.com/manuelbl/ttn-esp32/wiki/Get-Started) en la Wiki para comenzar.
-
 ## Placas Soportadas
 
 Se admiten todas las placas con chips Semtech SX127x, RFM9x y compatibles. Esto incluye placas de ttgo, Heltec y HopeRF. Para muchas de ellas, la [Configuración de Pines](https://github.com/manuelbl/ttn-esp32/wiki/Boards-and-Pins) se describe en detalle.
@@ -163,7 +159,7 @@ Se admiten todas las placas con chips Semtech SX127x, RFM9x y compatibles. Esto 
 
 Consulta la [Documentación de la API](https://codecrete.net/ttn-esp32/) para obtener información sobre la API en C y C++.
 
-### Licencia para el proyecto de conexion del ESP con TTN
+### Licencia para el proyecto de conexión del ESP con TTN
 
 Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
 
