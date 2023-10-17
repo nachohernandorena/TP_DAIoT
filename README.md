@@ -124,7 +124,7 @@ Mas info de los puntos 6, 7 y 8 en [All Things Docs](https://docs.allthingstalk.
 
 ![geofence](/images/geofence.png)
 
-10. Para la realización del dashboard donde se puede visualizar el `Tracking`` del dispositivo utiliza [Pinboard](https://www.allthingstalk.com/faq/pinboard-management-in-also-iot-platform) dentro de [All Thing Talk](https://www.allthingstalk.com/). 
+10. Para la realización del dashboard donde se puede visualizar el `Tracking` del dispositivo utiliza [Pinboard](https://www.allthingstalk.com/faq/pinboard-management-in-also-iot-platform) dentro de [All Thing Talk](https://www.allthingstalk.com/). 
 
 ![pinboards](/images/pinboards.png)
 
