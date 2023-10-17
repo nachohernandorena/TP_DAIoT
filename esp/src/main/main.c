@@ -2,12 +2,9 @@
  * 
  * ttn-esp32 - The Things Network device library for ESP-IDF / SX127x
  * 
- * Copyright (c) 2021 Manuel Bleichenbacher
- * 
  * Licensed under MIT License
  * https://opensource.org/licenses/MIT
  *
- * Sample program (in C) sending messages and going to deep sleep in-between.
  *******************************************************************************/
 
 #include "freertos/FreeRTOS.h"
