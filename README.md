@@ -21,9 +21,9 @@ Luego, mediante la vinculación con la plataforma [All Thing Talk](https://www.a
 
 2. Levantar Gateway LoraWAN: Al basarse en un dispositivo Raspberry Pi 3, funciona con el sistema operativo Raspbian, que a su vez se basa en la distribución de Linux Debian y permite ejecutar la configuración del dispositivo por consola a través de SSH (Secure Shell), esto es una característica común de los dispositivos que funcionan con sistema operativo Linux. El procedimiento de configuración se encuentra en el [sitio del fabricante](https://docs.rakwireless.com/Product-Categories/WisGate/RAK7243/Quickstart/).
 Los puntos principales de la configuración son:
-        1.         Conexión Wi-Fi a la red disponible.
-        2.         Configuración del concentrador LoRa apuntando al servidor TTS.
-        3.         Plan de frecuencia, para este caso AU915.
+        1. Conexión Wi-Fi a la red disponible.
+        2. Configuración del concentrador LoRa apuntando al servidor TTS.
+        3. Plan de frecuencia, para este caso AU915.
 
 3. Deberas configurar los pines dependiendo del dispositivo que tengas.
 
