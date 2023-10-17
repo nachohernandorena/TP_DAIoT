@@ -50,7 +50,9 @@ En [The Things Network](https://www.thethingsnetwork.org/) deberás crear una nu
 
 ![app](/images/app.png)
 
-Dentro de la carpeta `include` del proyecto tendrás crear un archivo `keys.h` para insertar la información anterior. Recuerda no subirlo a tu repositorio, para esto deberas agregarlo al `.gitignore`.
+Dentro de la carpeta `include` del proyecto tendrás crear un archivo `keys.h` para insertar la información anterior. 
+
+**Nota:** Recuerda no subirlo a tu repositorio, para esto deberas agregarlo al `.gitignore`.
 
 Ejemplo código: 
 
@@ -66,7 +68,7 @@ const char *devEui = "????????????????";
 // AppKey
 const char *appKey = "????????????????????????????????"; 
 ```
-**Nota:**: https://www.thethingsnetwork.org/docs/lorawan/security/
+**Nota:** https://www.thethingsnetwork.org/docs/lorawan/security/
 
 
 ## Uso
