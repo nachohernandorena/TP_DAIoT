@@ -138,14 +138,66 @@ Mas info de los puntos 6, 7 y 8 en [All Things Docs](https://docs.allthingstalk.
 
 ![storage](/images/storage.png)
 
-Puedes utilizar endpoints como los que dejo a continuación para recuperar datos del almacenamiento:
 
-```js
+Con un codigo de python como el del ejemplo que dejo a continuación se puede consultar el json de la base de datos:
 
-GET https://nam1.cloud.thethings.network/api/v3/as/applications/muquitta01/packages/storage/{type}
-GET https://nam1.cloud.thethings.network/api/v3/as/applications/muquitta01/devices/{device_id}/packages/storage/{type}
+```python
 
+import requests
+import json
+
+
+# Definir la URL base de la API de TTN
+base_url = 'https://nam1.cloud.thethings.network/api/v3/as/applications/muquitta01/packages/storage'
+
+# Reemplaza '<API_KEY>' con tu token de autenticación
+headers = {'Authorization': 'Bearer <TOKEN>'}
+
+# Ejemplo de una solicitud GET para obtener información de un dispositivo
+response = requests.get(f'{base_url}/uplink_message', headers=headers)
+
+# Verificar si la solicitud fue exitosa
+if response.status_code == 200:
+    try:
+        data = response.json()
+        print(data)
+    except json.JSONDecodeError as e:
+        print(f'Error al decodificar JSON: {e}')
+else:
+    print(f'Error {response.status_code}: {response.text}')
 ```
+
+
+```shell
+/src$ python ttn_api.py
+```
+
+Extracto del archivo .JSON en la DB de TT para un mensaje de uplink:
+```json
+        "decoded_payload": {
+          "latitude": -34.6165,
+          "longitude": -58.4686
+        },
+        "rx_metadata": [
+          {
+            "gateway_ids": {
+              "gateway_id": "rak7243gw",
+              "eui": "XXXXXXXXXXXXXXX"
+            },
+            "timestamp": 1191794099,
+            "rssi": -24,
+            "channel_rssi": -24,
+            "snr": 9.2,
+            "location": {
+              "latitude": -34.625527954139,
+              "longitude": -58.4864767150376,
+              "source": "SOURCE_REGISTRY"
+            },
+            "uplink_token": "XXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+            "channel_index": 3,
+            "received_at": "2023-10-18T01:52:54.067528982Z"
+```
+
 
 El período de retención de datos es de 24 horas. Se puede cambiar de plan para tener otros servicios, mayor tiempo de retencio y SLA.
 
