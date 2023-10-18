@@ -171,7 +171,8 @@ else:
 /src$ python ttn_api.py
 ```
 
-Extracto del archivo .JSON en la DB de TT para un mensaje de uplink:
+Extracto del archivo .JSON en la base de datos de TTN para un mensaje de uplink:
+
 ```json
         "decoded_payload": {
           "latitude": -34.6165,
