@@ -120,7 +120,7 @@ Mas info de los puntos 6, 7 y 8 en [All Things Docs](https://docs.allthingstalk.
 
 ![device](/images/device.png)
 
-9. Dentro de [All Thing Talk](https://www.allthingstalk.com/) utiliza Geofence que te permite definir el límite geográfico para detectar cuándo los objetos entran, salen o permanecen dentro de él. Puedes crear múltiples límites y hacer seguimiento de varios dispositivos. En el proyecto se define el límite de la ciudad de Buenos Aires, y se establecen alarmas para cuando el dispositivo salga fuera del area, mediante push en la aplicacion mobile, mediante la web y por medio de emails.
+9. Dentro de [All Thing Talk](https://www.allthingstalk.com/) utiliza Geofence que te permite definir el límite geográfico para detectar cuándo los objetos entran, salen o permanecen dentro de él. Puedes crear múltiples límites y hacer seguimiento de varios dispositivos. En el proyecto se define el límite de la ciudad de Buenos Aires, y se establecen alarmas para cuando el dispositivo salga fuera del área, mediante push en la aplicación mobile, mediante la web y por medio de emails.
 
 ![geofence](/images/geofence.png)
 
@@ -199,7 +199,7 @@ Extracto del archivo `.JSON` en la base de datos de `TTN` para un mensaje de upl
 ```
 
 
-El período de retención de datos es de 24 horas. Se puede cambiar de plan para tener otros servicios, mayor tiempo de retencio y SLA.
+El período de retención de datos es de 24 horas. Se puede cambiar de plan para tener otros servicios, mayor tiempo de retención y SLA.
 
 Consulta [Storage Integration API](https://www.thethingsindustries.com/docs/reference/api/storage_integration/) para mas info.
 
