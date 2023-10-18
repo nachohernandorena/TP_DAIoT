@@ -166,7 +166,6 @@ else:
     print(f'Error {response.status_code}: {response.text}')
 ```
 
-<<<<<<< HEAD
 
 ```shell
 /src$ python ttn_api.py
@@ -200,9 +199,6 @@ Extracto del archivo .JSON en la DB de TT para un mensaje de uplink:
 
 
 El período de retención de datos es de 24 horas. Se puede cambiar de plan para tener otros servicios, mayor tiempo de retencio y SLA.
-=======
-El período de retención de datos es de 24 horas. Se puede cambiar de plan para tener otros servicios, mayor tiempo de retención y SLA.
->>>>>>> origin/main
 
 Consulta [Storage Integration API](https://www.thethingsindustries.com/docs/reference/api/storage_integration/) para mas info.
 
