@@ -89,7 +89,7 @@ const char *appKey = "????????????????????????????????";
 
 ![att_newdevices](/images/att_newdevices.png)
 
-8. En Settings -> `Payload Formats`, deberás parsear el contenido del [payload recibido](https://docs.allthingstalk.com/developers/data/custom-payload-conversion/). Para el caso, se usa la opción de ABCL y se arma el siguiente código:
+8. En `Settings` -> `Payload Formats`, deberás parsear el contenido del [payload recibido](https://docs.allthingstalk.com/developers/data/custom-payload-conversion/). Para el caso, se usa la opción de ABCL y se arma el siguiente código:
 
 ```json
 {
@@ -134,11 +134,11 @@ Mas info de los puntos 6, 7 y 8 en [All Things Docs](https://docs.allthingstalk.
 
 ![notifications](/images/notifications.jpg)
 
-11. En [The Things Network](https://www.thethingsnetwork.org/), cuentas con `Storage` de la información generada.
+11. En [The Things Network](https://www.thethingsnetwork.org/) cuentas con `Storage` de la información generada.
 
 ![storage](/images/storage.png)
 
-Con un codigo de python como el del ejemplo que dejo a continuación se puede consultar el json de la base de datos:
+Con un codigo de `Python` como el del ejemplo que dejo a continuación se puede consultar el `JSON` de la base de datos:
 
 ```python
 
@@ -171,7 +171,7 @@ Ejemplo de comando ejecutado desde la consola de Linux:
 /src$ python ttn_api.py
 ```
 
-Extracto del archivo .JSON en la base de datos de TTN para un mensaje de uplink:
+Extracto del archivo `.JSON` en la base de datos de `TTN` para un mensaje de uplink:
 
 ```json
         "decoded_payload": {
