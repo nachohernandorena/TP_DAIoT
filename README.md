@@ -165,7 +165,7 @@ if response.status_code == 200:
 else:
     print(f'Error {response.status_code}: {response.text}')
 ```
-
+Ejemplo de comando ejecutado desde la consola de Linux:
 
 ```shell
 /src$ python ttn_api.py
