@@ -138,7 +138,7 @@ Mas info de los puntos 6, 7 y 8 en [All Things Docs](https://docs.allthingstalk.
 
 ![storage](/images/storage.png)
 
-Con un codigo de python como el del ejemplo que dejo a continuación se puede consultar el JSON de la base de datos:
+Con un codigo de python como el del ejemplo que dejo a continuación se puede consultar el json de la base de datos:
 
 ```python
 
@@ -171,7 +171,7 @@ else:
 /src$ python ttn_api.py
 ```
 
-Extracto del archivo .JSON en la base de datos de TTN para un mensaje de uplink:
+Extracto del archivo .JSON en la DB de TT para un mensaje de uplink:
 ```json
         "decoded_payload": {
           "latitude": -34.6165,
