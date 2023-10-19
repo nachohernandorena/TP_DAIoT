@@ -15,17 +15,19 @@ Luego, mediante la vinculación con la plataforma [All Thing Talk](https://www.a
 
 ## Requisitos previos
 
-1. Antes de utilizar este código, asegúrate de configurar la frecuencia LoRaWAN y los ajustes del chip de radio utilizando `idf.py menuconfig`. En el menú, navega a `Components` -> `The Things Network` para configurar los valores apropiados.
+1. Este código debe ejecutarse desde '/esp/src'
+  
+2. Antes de utilizar este código, asegúrate de configurar la frecuencia LoRaWAN y los ajustes del chip de radio utilizando `idf.py menuconfig`. En el menú, navega a `Components` -> `The Things Network` para configurar los valores apropiados.
 
 ![sdk](/images/sdk.png)
 
-2. Levantar Gateway LoraWAN: Al basarse en un dispositivo Raspberry Pi 3, funciona con el sistema operativo Raspbian, que a su vez se basa en la distribución de Linux Debian y permite ejecutar la configuración del dispositivo por consola a través de SSH (Secure Shell), esto es una característica común de los dispositivos que funcionan con sistema operativo Linux. El procedimiento de configuración se encuentra en el [sitio del fabricante](https://docs.rakwireless.com/Product-Categories/WisGate/RAK7243/Quickstart/).
+3. Levantar Gateway LoraWAN: Al basarse en un dispositivo Raspberry Pi 3, funciona con el sistema operativo Raspbian, que a su vez se basa en la distribución de Linux Debian y permite ejecutar la configuración del dispositivo por consola a través de SSH (Secure Shell), esto es una característica común de los dispositivos que funcionan con sistema operativo Linux. El procedimiento de configuración se encuentra en el [sitio del fabricante](https://docs.rakwireless.com/Product-Categories/WisGate/RAK7243/Quickstart/).
 Los puntos principales de la configuración son:
 - Conexión Wi-Fi a la red disponible.
 - Configuración del concentrador LoRa apuntando al servidor TTS.
 - Plan de frecuencia, para este caso AU915.
 
-3. Deberás configurar los pines dependiendo del dispositivo que tengas.
+4. Deberás configurar los pines dentro de 'main.c' dependiendo del dispositivo que tengas.
 
 ```cpp
 // Pins and other resources
@@ -41,7 +43,7 @@ Los puntos principales de la configuración son:
 #define TTN_PIN_DIO1      35
 ```
 
-4. Además, necesitas obtener la siguiente información de activación de la consola de TTN para tu dispositivo específico:
+5. Además, necesitas obtener la siguiente información de activación de la consola de TTN para tu dispositivo específico:
 - AppEUI (a veces llamado JoinEUI)
 - DevEUI
 - AppKey
