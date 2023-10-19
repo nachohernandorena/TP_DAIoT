@@ -15,7 +15,7 @@ Luego, mediante la vinculación con la plataforma [All Thing Talk](https://www.a
 
 ## Requisitos previos
 
-1. Este código debe ejecutarse desde '/esp/src'
+1. Este código debe ejecutarse desde  `/esp/src`
   
 2. Antes de utilizar este código, asegúrate de configurar la frecuencia LoRaWAN y los ajustes del chip de radio utilizando `idf.py menuconfig`. En el menú, navega a `Components` -> `The Things Network` para configurar los valores apropiados.
 
@@ -27,8 +27,8 @@ Los puntos principales de la configuración son:
 - Configuración del concentrador LoRa apuntando al servidor TTS.
 - Plan de frecuencia, para este caso AU915.
 
-4. Deberás configurar los pines dentro de 'main.c' dependiendo del dispositivo que tengas.
-
+4. Deberás configurar los pines dentro de `main.c` dependiendo del dispositivo que tengas.
+ 
 ```cpp
 // Pins and other resources
 #define TTN_SPI_HOST      SPI2_HOST
